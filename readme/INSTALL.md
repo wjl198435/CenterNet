@@ -8,6 +8,9 @@ After install Anaconda:
 
     ~~~
     conda create --name CenterNet python=3.6
+    
+    删除CenterNet环境
+    [conda remove -n CenterNet  --all]
     ~~~
     And activate the environment.
     
