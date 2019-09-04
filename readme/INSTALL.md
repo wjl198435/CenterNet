@@ -66,6 +66,9 @@ After install Anaconda:
     ~~~
     cd $CenterNet_ROOT/src/lib/models/networks/DCNv2
     ./make.sh
+    
+    torch.cuda.is_available()返回false的解决办法
+    https://blog.csdn.net/u010592301/article/details/85254789
     ~~~
 6. [Optional] Compile NMS if your want to use multi-scale testing or test ExtremeNet.
 
