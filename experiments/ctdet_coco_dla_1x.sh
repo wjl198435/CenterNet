@@ -1,6 +1,8 @@
 cd src
 # train
-python main.py ctdet --exp_id coco_dla_1x --batch_size 128 --master_batch 9 --lr 5e-4 --gpus 0,1,2,3,4,5,6,7 --num_workers 16
+# python main.py ctdet --exp_id coco_dla_1x --batch_size 128 --master_batch 9 --lr 5e-4 --gpus 0,1,2,3,4,5,6,7 --num_workers 16
+# for GPU rtx2080ti cuda10.2
+python main.py ctdet --exp_id coco_dla_1x --batch_size 16 --master_batch 5 --lr 5e-4 --gpus 0 --num_workers 16
 # test
 python test.py ctdet --exp_id coco_dla_1x --keep_res --resume
 # flip test
